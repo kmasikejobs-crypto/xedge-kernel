@@ -1,21 +1,12 @@
-# Xedge Kernel
+# Project Title
 
-Xedge Kernel is an innovative project that...
+Some project description.
 
-**Live Demo**: Coming soon via Wokwi (browser-based, no hardware needed).
+... (the rest of the README content)
 
-## Features
-- Feature 1
-- Feature 2
-
-## Installation
-Install instructions go here.
-
-## Usage
-Usage instructions go here.
-
-## Contributing
-Contributing guidelines go here.
+## Legal & Protection
+xEdge™ is an early-stage project. The core idea (AI-native predictive scheduler in the kernel) is protected under common law. See CLA.md for contribution terms. Commercial use or rebranding without permission is not encouraged.
 
 ## License
-License information goes here.
+
+... (license details)
