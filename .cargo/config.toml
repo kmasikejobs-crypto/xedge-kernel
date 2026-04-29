@@ -1,0 +1,18 @@
+[build]
+target = "thumbv7em-none-eabihf"
+
+[profile.dev]
+opt-level = "2"
+panic = "abort"
+
+[profile.release]
+opt-level = "3"
+panic = "abort"
+
+[runner]
+# specify the runner for the target
+runner = "probe-rs"
+
+[custom-target]
+target = "thumbv7em-none-eabihf"
+description = "A target for ARM Cortex-M microcontrollers"
