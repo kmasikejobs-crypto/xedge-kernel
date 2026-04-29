@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Rust
+        uses: rust-lang/rustup-init@v1
+        with:
+          default-toolchain: stable
+
+      - name: Install dependencies
+        run: |  
+          rustup target add thumbv7em-none-eabi
+          cargo install cargo-binutils
+
+      - name: Build
+        run: cargo build --target thumbv7em-none-eabi
+
+      - name: Test
+        run: cargo test --target thumbv7em-none-eabi
